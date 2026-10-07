@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lionel Messi - Légende du football</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+
+        <nav>
+            <div class="logo">MESSI ⚽</div>
+
+            <ul class="nav-links">
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#carriere">Carrière</a></li>
+                <li><a href="#titres">Titres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="darkMode">🌙</button>
+        </nav>
+
+        <div class="hero-content">
+
+            <img src="messi argentine.jpeg"
+                 alt="Lionel Messi avec l'Argentine"
+                 class="hero-img">
+
+            <h1>Lionel Messi</h1>
+
+            <p>
+                Une légende du football, un exemple de talent,
+                d'humilité et de réussite.
+            </p>
+
+            <button id="discoverBtn">
+                Découvrir Messi
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- BIOGRAPHIE -->
+        <section id="biographie" class="section">
+
+            <h2>Biographie</h2>
+
+            <div class="bio-container">
+
+                <img src="messi vs real.jpg"
+                     alt="Lionel Messi"
+                     class="section-img">
+
+                <div class="bio-text">
+
+                    <p>
+                        Lionel Andrés Messi est un footballeur argentin
+                        né le 24 juin 1987 à Rosario, en Argentine.
+                    </p>
+
+                    <p>
+                        Il est considéré comme l'un des meilleurs
+                        joueurs de l'histoire du football.
+                    </p>
+
+                    <button class="info-btn" onclick="showMessage()">
+                        En savoir plus
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARRIÈRE -->
+        <section id="carriere" class="section">
+
+            <h2>Sa carrière</h2>
+
+            <div class="cards">
+
+                <!-- BARCELONE -->
+                <article class="card">
+
+                    <img src="messi fc barcelone.jpeg"
+                         alt="Messi au FC Barcelone">
+
+                    <div class="card-content">
+
+                        <h3>FC Barcelone</h3>
+
+                        <span>2000 - 2021</span>
+
+                        <p>
+                            Messi a passé plus de 20 ans au FC Barcelone,
+                            où il est devenu une légende du club.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PSG -->
+                <article class="card">
+
+                    <img src="messi paris.jpeg"
+                         alt="Messi au PSG">
+
+                    <div class="card-content">
+
+                        <h3>Paris Saint-Germain</h3>
+
+                        <span>2021 - 2023</span>
+
+                        <p>
+                            Après son départ du Barça, Messi rejoint
+                            le PSG et continue à impressionner par
+                            son talent et sa vision du jeu.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- INTER MIAMI -->
+                <article class="card">
+
+                    <img src="messi inter miami.jpeg"
+                         alt="Messi à Inter Miami">
+
+                    <div class="card-content">
+
+                        <h3>Inter Miami</h3>
+
+                        <span>Depuis 2023</span>
+
+                        <p>
+                            Messi joue à l'Inter Miami en MLS,
+                            où il continue son aventure footballistique.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TITRES -->
+        <section id="titres" class="section">
+
+            <h2>Titres et réalisations</h2>
+
+            <div class="trophies">
+
+                <div class="trophy">
+                    <strong>8</strong>
+                    <p>Ballons d'Or</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>4</strong>
+                    <p>Ligues des Champions</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>10</strong>
+                    <p>Championnats d'Espagne</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>1</strong>
+                    <p>Coupe du Monde</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>2</strong>
+                    <p>Copa América</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>1</strong>
+                    <p>Médaille d'or olympique</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>7</strong>
+                    <p>Coupes du Roi</p>
+                </div>
+
+                <div class="trophy">
+                    <strong>6</strong>
+                    <p>Souliers d'Or européens</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Email :
+                <a href="mailto:messi@legend.com">
+                    messi@legend.com
+                </a>
+            </p>
+
+            <button id="contactBtn">
+                Me contacter
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Lionel Messi Fan Page ⚽
+        </p>
+
+        <button id="topBtn">
+            ↑
+        </button>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<style>
+
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+#darkMode {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0099ff,
+        #005bea
+    );
+
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+
+    padding-top: 80px;
+}
+
+.hero-img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 25px 0 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#discoverBtn {
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    background: white;
+    color: #005bea;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#discoverBtn:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+
+    color: #005bea;
+}
+
+
+/* =========================
+   BIOGRAPHIE
+========================= */
+
+.bio-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    text-align: left;
+}
+
+.section-img {
+    width: 450px;
+    max-width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.bio-text {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.bio-text p {
+    margin-bottom: 20px;
+}
+
+.info-btn,
+#contactBtn {
+    padding: 12px 25px;
+
+    background: #005bea;
+    color: white;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.info-btn:hover,
+#contactBtn:hover {
+    background: #003f9e;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CARRIÈRE
+========================= */
+
+.cards {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: #005bea;
+    font-weight: bold;
+}
+
+.card p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TITRES
+========================= */
+
+.trophies {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.trophy {
+    background: white;
+
+    padding: 30px 15px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.trophy:hover {
+    transform: scale(1.05);
+}
+
+.trophy strong {
+    display: block;
+
+    font-size: 45px;
+
+    color: #005bea;
+}
+
+.trophy p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #e9f2ff;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact a {
+    color: #005bea;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+#topBtn {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #005bea;
+    color: white;
+
+    font-size: 20px;
+
+    display: none;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .card,
+body.dark .trophy {
+    background: #1f1f1f;
+}
+
+body.dark .contact {
+    background: #181818;
+}
+
+body.dark .section h2 {
+    color: #4da3ff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .trophies {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .trophies {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+
+
+
+
+// ==============================
+// BOUTON DÉCOUVRIR
+// ==============================
+<script>
+
+const discoverBtn =
+    document.getElementById("discoverBtn");
+
+discoverBtn.addEventListener("click", function () {
+
+    document
+        .getElementById("biographie")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+});
+
+
+// ==============================
+// DARK MODE
+// ==============================
+
+const darkMode =
+    document.getElementById("darkMode");
+
+darkMode.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+
+        darkMode.textContent = "☀️";
+
+    } else {
+
+        darkMode.textContent = "🌙";
+
+    }
+
+});
+
+
+// ==============================
+// MESSAGE BIOGRAPHIE
+// ==============================
+
+function showMessage() {
+
+    alert(
+        "Lionel Messi est considéré comme l'un des plus grands joueurs de l'histoire du football ! ⚽🐐"
+    );
+
+}
+
+
+// ==============================
+// CONTACT
+// ==============================
+
+const contactBtn =
+    document.getElementById("contactBtn");
+
+contactBtn.addEventListener("click", function () {
+
+    alert(
+        "Vous pouvez nous contacter à : messi@legend.com"
+    );
+
+});
+
+
+// ==============================
+// BOUTON RETOUR EN HAUT
+// ==============================
+
+const topBtn =
+    document.getElementById("topBtn");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 400) {
+
+        topBtn.style.display = "block";
+
+    } else {
+
+        topBtn.style.display = "none";
+
+    }
+
+});
+
+
+topBtn.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+</script>
+
